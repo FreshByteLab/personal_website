@@ -1,0 +1,13 @@
+node_modules
+.next
+out
+dist
+.env*
+*.log
+
+# legacy/archives
+web.zip
+wordpress.sql
+image.png
+wordpress/
+web/

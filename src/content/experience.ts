@@ -2,38 +2,84 @@ import type { ExperienceItem } from "./types";
 
 export const experienceSection = {
   title: "Experience",
-  subtitle: "Credit strategy, portfolio construction, and research automation.",
+  subtitle: "Fixed income strategy, cross-asset advisory, and quantitative portfolio work.",
   items: [
     {
-      role: "Head of Credit Strategy",
-      company: "Global Asset Manager",
-      dates: "2018 - Present",
+      role: "Senior Technical Consultant",
+      company: "bmpi AG",
+      dates: "Apr 2025 - Oct 2025",
       bullets: [
-        "Lead multi-sector credit allocation across investment-grade and high-yield mandates.",
-        "Built a regime-aware risk dashboard tying macro signals to issuer-level spread decisions.",
-        "Introduced Python-based automation that reduced weekly reporting cycles by 60%.",
-        "Partnered with portfolio managers to refine downside protection and liquidity buffers."
+        "Developed software for data migration and synthetic data generation projects.",
+        "Built Python and JavaScript tooling integrated with MySQL and PostgreSQL.",
+        "Implemented GenAI API workflows to accelerate data preparation and testing."
       ]
     },
     {
-      role: "Senior Credit Portfolio Manager",
-      company: "European Investment Firm",
-      dates: "2013 - 2018",
+      role: "Educational Career Break",
+      company: "Professional Certifications",
+      dates: "Aug 2024 - Mar 2025",
       bullets: [
-        "Managed relative-value strategies across corporate bonds and credit derivatives.",
-        "Implemented sector-tilt frameworks to control beta and capture carry opportunities.",
-        "Developed issuer-scoring models that blended fundamentals, ESG, and market signals.",
-        "Mentored analysts on scenario analysis, stress testing, and risk attribution."
+        "Completed PCEP, PCAP, and Responsible AI (RAI) certifications.",
+        "Focused on OOP, Python, machine learning, and applied risk management."
       ]
     },
     {
-      role: "Credit & Risk Analyst",
-      company: "Investment Bank",
-      dates: "2008 - 2013",
+      role: "Senior Fixed Income Portfolio Manager",
+      company: "LGT Private Bank (Switzerland)",
+      dates: "Jul 2022 - Jul 2024",
       bullets: [
-        "Delivered issuer deep-dives and cash-flow models for investment committees.",
-        "Supported portfolio construction with duration, curve, and spread risk analytics.",
-        "Automated data pipelines for rating migration and default-loss monitoring."
+        "Managed credit-opportunity fixed-income portfolios across CHF, USD, EUR, and GBP markets, including hybrids, HY/EM, and special situations.",
+        "Built proprietary ex-ante and ex-post analytics with Bloomberg API for attribution and scenario testing.",
+        "Presented investment views and performance reviews to senior management, clients, and investment committees.",
+        "Mentored analysts in credit selection, modelling, and portfolio construction."
+      ]
+    },
+    {
+      role: "Senior Fixed Income Strategist",
+      company: "LGT Private Bank (Switzerland)",
+      dates: "Apr 2019 - Jun 2022",
+      bullets: [
+        "Led sector coverage and thematic and commodity strategy across high-beta fixed income segments.",
+        "Formulated and presented strategy and credit recommendations to investment committees and clients.",
+        "Enhanced data infrastructure and reporting for transparency of performance and recommendations."
+      ]
+    },
+    {
+      role: "Credit Analyst",
+      company: "LGT Private Bank (Switzerland)",
+      dates: "Feb 2015 - Mar 2019",
+      bullets: [
+        "Covered capital structures and hybrid instruments across financial, insurance, and telecommunications sectors.",
+        "Performed credit and valuation analysis supporting EM and HY recommendations and investment committee discussions.",
+        "Built and maintained databases, bond-finder tools, and risk monitoring interfaces.",
+        "Improved analytical workflows and supported research and IT initiatives."
+      ]
+    },
+    {
+      role: "Fixed Income Investment Specialist",
+      company: "Bank Julius Baer & Co. Ltd.",
+      dates: "Jun 2013 - Jan 2015",
+      bullets: [
+        "Authored investment ideas and provided consulting for fixed income markets.",
+        "Developed a toolbox for new bond issues, delivering 60-80 client-ready publications annually."
+      ]
+    },
+    {
+      role: "Software/Database Developer",
+      company: "Eawag (ETH Institute)",
+      dates: "Jul 2012 - May 2013",
+      bullets: [
+        "Built a research SQL database for Project Lac and Access-based data management tools.",
+        "Automated reporting with MS SQL, Access VBA, and Excel VBA."
+      ]
+    },
+    {
+      role: "Multi-Asset Portfolio Manager",
+      company: "UBS Global Asset Management AG",
+      dates: "May 2007 - Jun 2011",
+      bullets: [
+        "Managed fund-of-fund mandates and USD IG bond portfolios across mandates exceeding $50bn.",
+        "Implemented derivatives overlays for hedging with credit, interest-rate, and FX instruments."
       ]
     }
   ] satisfies ExperienceItem[]

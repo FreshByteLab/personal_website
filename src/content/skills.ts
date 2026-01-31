@@ -2,35 +2,47 @@ import type { SkillGroup } from "./types";
 
 export const skillsSection = {
   title: "Skills",
-  subtitle: "Markets expertise paired with quant, tech, and tooling depth.",
+  subtitle: "Cross-asset advisory with quantitative depth and technical fluency.",
   groups: [
     {
       label: "Markets",
       items: [
-        "Investment Grade",
-        "High Yield",
-        "Credit Derivatives",
-        "Rates & Curves",
-        "Liquidity Management"
+        "Fixed Income",
+        "Credit",
+        "Multi-Asset",
+        "Derivatives",
+        "Structured Solutions"
       ]
     },
     {
       label: "Quant",
       items: [
-        "Relative-Value Modeling",
-        "Scenario Analysis",
-        "Stress Testing",
-        "Risk Attribution",
-        "Portfolio Optimization"
+        "Macroeconomic Analysis",
+        "Portfolio Construction",
+        "Risk Management",
+        "Security Selection",
+        "Financial Modeling"
       ]
     },
     {
       label: "Tech",
-      items: ["Python", "Pandas", "NumPy", "SQL", "APIs"]
+      items: ["Python", "R", "Access/SQL", "VBA", "JavaScript"]
     },
     {
       label: "Tools",
-      items: ["Bloomberg", "FactSet", "Jupyter", "Git", "Power BI"]
+      items: [
+        "Bloomberg",
+        "Avaloq",
+        "MS Office",
+        "Eviews",
+        "VS Code",
+        "Git",
+        "Confluence"
+      ]
+    },
+    {
+      label: "Languages",
+      items: ["German (native)", "English (C2)", "Spanish (B2)", "French (B1)"]
     }
   ] satisfies SkillGroup[]
 };

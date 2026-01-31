@@ -44,13 +44,17 @@ export default function Navbar() {
   }, []);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-white/10 bg-black/30 backdrop-blur-xl">
+    <header className="sticky top-0 z-50 border-b border-white/5 bg-black/40 backdrop-blur-md">
       <Container className="flex h-16 items-center justify-between gap-6">
         <div className="flex flex-col">
-          <span className="font-display text-lg text-white">{site.name}</span>
-          <span className="text-xs text-white/60">{site.role}</span>
+          <span className="text-xs uppercase tracking-[0.4em] text-white/80">
+            {site.name}
+          </span>
+          {site.role ? (
+            <span className="mt-1 text-xs text-white/50">{site.role}</span>
+          ) : null}
         </div>
-        <nav className="hidden items-center gap-6 text-sm text-white/70 md:flex">
+        <nav className="hidden items-center gap-6 text-xs uppercase tracking-[0.2em] text-white/60 md:flex">
           {site.nav.map((item) => (
             <a
               key={item.id}
@@ -64,7 +68,7 @@ export default function Navbar() {
               {item.label}
               <span
                 className={cn(
-                  "absolute -bottom-2 left-0 h-0.5 w-full rounded-full bg-accent transition-opacity",
+                  "absolute -bottom-2 left-0 h-px w-full bg-white/60 transition-opacity",
                   active === item.id ? "opacity-100" : "opacity-0"
                 )}
               />

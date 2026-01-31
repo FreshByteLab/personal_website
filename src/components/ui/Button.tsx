@@ -17,9 +17,9 @@ const baseStyles =
 
 const variants = {
   primary:
-    "bg-accent text-ink shadow-glow hover:bg-accent-strong hover:shadow-[0_0_70px_rgba(141,178,255,0.3)]",
+    "bg-white text-ink shadow-[0_20px_40px_rgba(0,0,0,0.35)] hover:bg-white/90",
   secondary:
-    "border-white/20 bg-white/5 text-white hover:border-white/40 hover:bg-white/10",
+    "border-white/20 bg-transparent text-white hover:border-white/40 hover:bg-white/10",
   ghost: "text-white/80 hover:text-white"
 };
 

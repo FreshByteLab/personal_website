@@ -2,40 +2,37 @@ import type { ProjectItem } from "./types";
 
 export const projectsSection = {
   title: "Projects",
-  subtitle: "Selected builds that connect risk signals to faster decisions.",
+  subtitle: "Applied tools and workflows built across strategy, analytics, and data.",
   items: [
     {
-      title: "CrashO'Clock",
+      title: "Ex-Ante / Ex-Post Analytics",
       description:
-        "Featured risk intelligence console that flags regime shifts using volatility, spreads, and liquidity stress indicators.",
-      tags: ["Risk", "Alerts", "Macro", "Python"],
-      href: "#contact",
-      cta: "Request Demo",
-      featured: true
+        "Portfolio analytics toolkit built with Bloomberg API to strengthen attribution, scenario testing, and signal extraction.",
+      tags: ["Bloomberg API", "Attribution", "Scenario Analysis"]
     },
     {
-      title: "Credit Signal Stack",
+      title: "Fixed Income Optimization Toolset",
       description:
-        "Unified pipeline that blends issuer fundamentals, ratings momentum, and pricing anomalies into daily signals.",
-      tags: ["Credit", "Signals", "Automation"]
+        "Toolset for portfolio optimization across fixed income sub-segments and asset allocation.",
+      tags: ["Portfolio Optimization", "Asset Allocation", "Fixed Income"]
     },
     {
-      title: "Portfolio Risk Lens",
+      title: "Bond Issue Coverage Toolbox",
       description:
-        "Scenario engine for curve shifts, spread shocks, and liquidity drawdowns with instant attribution.",
-      tags: ["Risk", "Stress Testing", "Attribution"]
+        "Workflow for new issue coverage and publication production, supporting 60-80 client-ready pieces per year.",
+      tags: ["Fixed Income", "Research", "Publishing"]
     },
     {
-      title: "AI Research Assistant",
+      title: "Risk Monitoring Interfaces",
       description:
-        "Domain-tuned retrieval workflows that shorten research cycles and improve issuer coverage.",
-      tags: ["AI", "Research", "Productivity"]
+        "Databases and bond-finder tooling to streamline coverage across credit capital structures.",
+      tags: ["Databases", "Credit", "Monitoring"]
     },
     {
-      title: "Liquidity Drilldown",
+      title: "Synthetic Data Generation",
       description:
-        "Dashboard tracking dealer depth, bid-ask dispersion, and selloff sensitivity across sectors.",
-      tags: ["Liquidity", "Markets", "Monitoring"]
+        "Synthetic data generation with implementation into securities accounting systems.",
+      tags: ["Data Engineering", "Python", "GenAI"]
     }
   ] satisfies ProjectItem[]
 };

@@ -1,6 +1,6 @@
 export const contactSection = {
   title: "Contact",
-  subtitle: "Available for portfolio advisory, research partnerships, and automation builds.",
+  subtitle: "Based in Switzerland. Available for advisory and strategic partnerships.",
   form: {
     submitLabel: "Send Message",
     successTitle: "Message ready",
@@ -14,7 +14,7 @@ export const contactSection = {
       },
       email: {
         label: "Email",
-        placeholder: "you@sandrozwyssig.ch",
+        placeholder: "sandro@zwyssig.info",
         error: "Please enter a valid email address."
       },
       message: {
@@ -27,23 +27,23 @@ export const contactSection = {
   links: [
     {
       label: "LinkedIn",
-      href: "https://www.linkedin.com/in/your-handle",
-      detail: "Connect professionally"
+      href: "https://www.linkedin.com/in/sandro-zwyssig-7814858/",
+      detail: "linkedin.com/in/sandro-zwyssig-7814858"
     },
     {
       label: "GitHub",
-      href: "https://github.com/your-handle",
-      detail: "Open-source work"
+      href: "https://github.com/FreshByteLab",
+      detail: "github.com/FreshByteLab"
     },
     {
       label: "Email",
-      href: "mailto:sandro@sandrozwyssig.ch",
-      detail: "sandro@sandrozwyssig.ch"
+      href: "mailto:sandro@zwyssig.info",
+      detail: "sandro@zwyssig.info"
+    },
+    {
+      label: "Phone",
+      href: "tel:+41764368137",
+      detail: "+41 76 436 81 37"
     }
-  ],
-  domainDetails: {
-    domain: "sandrozwyssig.ch",
-    registrar: "Hostpoint AG",
-    dnssec: "DNSSEC enabled"
-  }
+  ]
 };

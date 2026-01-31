@@ -91,17 +91,6 @@ export default function Contact() {
                 </a>
               </Card>
             ))}
-            <Card className="p-5 text-xs text-white/60">
-              <p>
-                Domain: <span className="text-white">{contactSection.domainDetails.domain}</span>
-              </p>
-              <p>
-                Registrar: <span className="text-white">{contactSection.domainDetails.registrar}</span>
-              </p>
-              <p>
-                Security: <span className="text-white">{contactSection.domainDetails.dnssec}</span>
-              </p>
-            </Card>
           </div>
           <Card className="p-6">
             {submitted ? (

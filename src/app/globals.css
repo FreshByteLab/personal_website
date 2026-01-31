@@ -19,7 +19,7 @@ html {
 body {
   margin: 0;
   min-height: 100%;
-  background-color: #06080d;
+  background-color: #0a0f14;
   color: #e5e7eb;
 }
 
@@ -29,11 +29,10 @@ body::before {
   inset: 0;
   z-index: -2;
   background:
-    radial-gradient(1200px circle at 12% 8%, rgba(141, 178, 255, 0.16), transparent 55%),
-    radial-gradient(1000px circle at 85% 18%, rgba(255, 255, 255, 0.08), transparent 52%),
-    radial-gradient(900px circle at 60% 80%, rgba(37, 99, 235, 0.08), transparent 55%),
-    radial-gradient(circle at center, rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, 0.72) 100%),
-    linear-gradient(180deg, #070b12 0%, #06080d 100%);
+    radial-gradient(1200px circle at 20% 0%, rgba(255, 255, 255, 0.07), transparent 60%),
+    radial-gradient(900px circle at 75% 20%, rgba(255, 255, 255, 0.05), transparent 55%),
+    radial-gradient(circle at center, rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, 0.75) 100%),
+    linear-gradient(180deg, #11161d 0%, #0b1016 45%, #0a0f14 100%);
 }
 
 body::after {
@@ -41,7 +40,7 @@ body::after {
   position: fixed;
   inset: 0;
   z-index: -1;
-  opacity: 0.22;
+  opacity: 0.14;
   mix-blend-mode: soft-light;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E");
   background-size: 140px 140px;
@@ -59,7 +58,7 @@ body::after {
 
 @layer utilities {
   .text-gradient {
-    background: linear-gradient(120deg, #ffffff 0%, #b9c8ff 45%, #8db2ff 100%);
+    background: linear-gradient(120deg, #ffffff 0%, #cfd7e2 50%, #9fb2c8 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;

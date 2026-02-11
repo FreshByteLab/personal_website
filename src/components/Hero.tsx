@@ -3,6 +3,20 @@ import Image from "next/image";
 import { site } from "@/content/site";
 import Container from "@/components/ui/Container";
 import Button from "@/components/ui/Button";
+import AnimatedCounter from "@/components/AnimatedCounter";
+
+function getYearsOfExperience(): number {
+  const start = new Date(site.careerStart);
+  const now = new Date();
+  let years = now.getFullYear() - start.getFullYear();
+  if (
+    now.getMonth() < start.getMonth() ||
+    (now.getMonth() === start.getMonth() && now.getDate() < start.getDate())
+  ) {
+    years--;
+  }
+  return years;
+}
 
 export default function Hero() {
   return (
@@ -48,17 +62,38 @@ export default function Hero() {
               />
             </div>
             <div className="mt-10 h-px w-full bg-white/10" />
-            <div className="mt-6 flex flex-wrap items-end gap-4">
-              {site.metrics.map((metric) => (
-                <div key={metric.label} className="flex items-end gap-3">
-                  <div className="text-5xl font-semibold text-white sm:text-6xl">
-                    {metric.value}
+            <div className="mt-6 grid grid-cols-2 gap-6 sm:grid-cols-4">
+              {site.metrics.map((metric) => {
+                const parsed = metric.value.match(/^(\d+)\s*(.*)$/);
+                const target =
+                  metric.value === "dynamic"
+                    ? getYearsOfExperience()
+                    : parsed
+                      ? parseInt(parsed[1], 10)
+                      : 0;
+                const suffix =
+                  metric.value === "dynamic"
+                    ? " +"
+                    : parsed?.[2]
+                      ? ` ${parsed[2]}`
+                      : "";
+
+                return (
+                  <div key={metric.label}>
+                    <div className="text-4xl font-semibold text-white sm:text-5xl">
+                      <AnimatedCounter target={target} suffix={suffix} />
+                    </div>
+                    <div className="mt-1 text-sm font-medium text-white/70">
+                      {metric.label}
+                    </div>
+                    {metric.helper ? (
+                      <div className="mt-0.5 text-xs text-white/40">
+                        {metric.helper}
+                      </div>
+                    ) : null}
                   </div>
-                  <div className="pb-2 text-sm text-white/60">
-                    {metric.label}
-                  </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </div>
           <div className="relative">

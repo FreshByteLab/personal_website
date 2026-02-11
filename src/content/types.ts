@@ -11,16 +11,31 @@ export type Metric = {
 };
 
 export type ExperienceItem = {
+  id: string;
   role: string;
   company: string;
   dates: string;
   location?: string;
   bullets: string[];
+  skills?: string[];
+  achievements?: string[];
 };
 
 export type SkillGroup = {
   label: string;
   items: string[];
+};
+
+export type Strength = {
+  title: string;
+  description: string;
+  icon: string;
+};
+
+export type LanguageSkill = {
+  name: string;
+  level: string;
+  proficiency: number;
 };
 
 export type CertificationItem = {
@@ -55,6 +70,7 @@ export type MilestoneItem = {
   period: string;
   title: string;
   description: string;
+  targetId?: string;
 };
 
 export type EducationItem = {

@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx next dev -p 3000)",
+      "Read(//c/Users/sandro/OneDrive/Documents/Job/Job applications/**)"
+    ]
+  }
+}

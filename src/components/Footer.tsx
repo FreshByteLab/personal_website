@@ -34,7 +34,7 @@ export default function Footer() {
       <Container className="flex flex-col gap-4 text-sm text-white/60 md:flex-row md:items-center md:justify-between">
         <div>
           <p className="font-semibold text-white">
-            {"displayName" in site ? site.displayName : site.name}
+            {site.displayName || site.name}
           </p>
           <p className="text-xs text-white/50">{site.role}</p>
         </div>

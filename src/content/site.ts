@@ -3,7 +3,7 @@ import type { AboutHighlight, Metric, NavItem } from "./types";
 export const site = {
   name: "Sandro Zwyssig",
   displayName: "Dr. Sandro Zwyssig, RAI, FRM, ERP, CFTe, PCAP",
-  role: "",
+  role: "Financial Markets Expert",
   domain: "sandrozwyssig.ch",
   url: "https://sandrozwyssig.ch",
   hosting: {
@@ -13,7 +13,7 @@ export const site = {
   meta: {
     title: "Sandro Zwyssig | Portfolio & CV",
     description:
-      "Senior Investment Advisor with a strong quantitative background in fixed income, macro analysis, and risk-aware portfolio implementation."
+      "Financial Markets Expert with a strong quantitative background in fixed income, CHF investment-grade credit research, portfolio analytics, and risk-aware portfolio implementation."
   },
   nav: [
     { label: "About", href: "#about", id: "about" },
@@ -27,28 +27,44 @@ export const site = {
   hero: {
     headline: "Welcome",
     subheadline:
-      "I'm a seasoned multi-asset expert with a passion for financial innovation. My expertise spans fixed-income securities, financial modeling, and leveraging artificial intelligence to uncover opportunities, manage risks, and optimize processes. With a strong foundation in IT - ranging from programming to database management and AI applications - I thrive on creating innovative solutions that drive value in the financial sector. Whether it's simplifying complex financial concepts or developing transformative strategies, my goal is to deliver clarity, impact, and results.",
+      "Bridging financial markets expertise with quantitative analysis and technology to deliver clarity, impact, and results.",
     ctaPrimary: { label: "View Projects", href: "#projects" },
     ctaSecondary: { label: "Contact", href: "#contact" }
   },
+  careerStart: "2007-05-01",
   metrics: [
     {
-      value: "16 +",
+      value: "dynamic",
       label: "Years of Experience",
       helper: "Swiss wealth management & cross-asset advisory"
+    },
+    {
+      value: "10 +",
+      label: "Certifications",
+      helper: "CFA, FRM, CAIA, PRM, CFTe, and more"
+    },
+    {
+      value: "5",
+      label: "Languages",
+      helper: "German, English, Spanish, French, Italian"
+    },
+    {
+      value: "6",
+      label: "Asset Classes",
+      helper: "FI, Credit, Equities, FX, Commodities, Derivatives"
     }
   ] satisfies Metric[],
   about: {
     title: "About",
-    subtitle: "Quantitative, cross-asset advisory with a Swiss wealth focus.",
+    subtitle: "Multi-asset expertise meets quantitative rigour and modern technology.",
     paragraph:
-      "Expertise spans macro analysis, investment strategy, security selection, and ongoing advisory portfolio monitoring, including derivatives and structured solutions. Sandro presents market views and CIO perspectives with clarity, supporting client decisions through disciplined, risk-aware portfolio implementation.",
+      "I am an experienced multi-asset expert with a strong focus on fixed income and financial modelling. My structured and systematic approach has been instrumental in identifying financial opportunities and mitigating financial risks, enabling me to effectively design, conceptualize, and optimize new and existing business projects and processes. Additionally, I excel in deconstructing complex financial topics, making them accessible to both individual clients and larger audiences through clear, concise written and verbal communication.",
     highlights: [
       { text: "Quantitative research combining fixed income expertise with AI/ML applications" },
       { text: "Cross-asset advisory spanning macro analysis, derivatives, and structured products" },
       { text: "Strong IT foundation: Python, databases, Bloomberg API, and GenAI tooling" },
       { text: "Published DBA research on CoCo bonds, wavelets, and Bayesian networks" }
-    ] satisfies AboutHighlight[]
+    ] as AboutHighlight[]
   },
   socials: {
     linkedin: "https://www.linkedin.com/in/sandro-zwyssig-7814858/",

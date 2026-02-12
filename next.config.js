@@ -1,10 +1,7 @@
-/** @type {import("next").NextConfig} */
+/** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "export",
-  images: {
-    formats: ["image/avif", "image/webp"],
-    unoptimized: true
-  }
+  images: { unoptimized: true }, // wichtig für next/image auf Pages
 };
 
 module.exports = nextConfig;

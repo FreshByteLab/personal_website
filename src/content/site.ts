@@ -17,11 +17,9 @@ export const site = {
   },
   nav: [
     { label: "About", href: "#about", id: "about" },
-    { label: "Education", href: "#education", id: "education" },
     { label: "Experience", href: "#experience", id: "experience" },
     { label: "Skills", href: "#skills", id: "skills" },
-    { label: "Certifications", href: "#certifications", id: "certifications" },
-    { label: "Projects", href: "#projects", id: "projects" },
+{ label: "Projects", href: "#projects", id: "projects" },
     { label: "Contact", href: "#contact", id: "contact" }
   ] satisfies NavItem[],
   hero: {
@@ -60,10 +58,11 @@ export const site = {
     paragraph:
       "I am an experienced multi-asset expert with a strong focus on fixed income and financial modelling. My structured and systematic approach has been instrumental in identifying financial opportunities and mitigating financial risks, enabling me to effectively design, conceptualize, and optimize new and existing business projects and processes. Additionally, I excel in deconstructing complex financial topics, making them accessible to both individual clients and larger audiences through clear, concise written and verbal communication.",
     highlights: [
-      { text: "Quantitative research combining fixed income expertise with AI/ML applications" },
-      { text: "Cross-asset advisory spanning macro analysis, derivatives, and structured products" },
-      { text: "Strong IT foundation: Python, databases, Bloomberg API, and GenAI tooling" },
-      { text: "Published DBA research on CoCo bonds, wavelets, and Bayesian networks" }
+      { title: "Portfolio Management", text: "Full P&L responsibility across multi-currency fixed income mandates for institutional and UHNWI clients" },
+      { title: "Credit Analysis", text: "Buy-side analyst covering financials, hybrids, and high-yield across European markets at leading Swiss banks" },
+      { title: "Multi-Asset Strategy", text: "Asset allocation, commodity strategy, and cross-asset research across diverse market environments" },
+      { title: "Tool Building", text: "Bond valuation models, risk-monitoring systems, and rebalancing engines in Python and VBA" },
+      { title: "Quantitative Research", text: "Developing cutting-edge modelling techniques with Bayesian networks and wavelet analysis for portfolio construction" }
     ] as AboutHighlight[]
   },
   socials: {

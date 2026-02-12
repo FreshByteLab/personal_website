@@ -75,9 +75,9 @@ export default function Contact() {
           </h2>
         </div>
         <div className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr]">
-          <div className="space-y-4">
+          <div className="flex flex-col gap-4">
             {contactSection.links.map((link) => (
-              <Card key={link.label} className="p-5">
+              <Card key={link.label} className="flex-1 p-5">
                 <p className="text-xs uppercase tracking-[0.3em] text-white/50">
                   {link.label}
                 </p>

@@ -24,18 +24,26 @@ export default function Navbar() {
 
     if (!elements.length) return;
 
+    const visibleSet = new Set<string>();
+
     const observer = new IntersectionObserver(
       (entries) => {
-        const visible = entries
-          .filter((entry) => entry.isIntersecting)
-          .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
-        if (visible[0]?.target?.id) {
-          setActive(visible[0].target.id);
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            visibleSet.add(entry.target.id);
+          } else {
+            visibleSet.delete(entry.target.id);
+          }
+        });
+        // Pick the first visible section in page order
+        const first = sectionIds.find((id) => visibleSet.has(id));
+        if (first) {
+          setActive(first);
         }
       },
       {
-        rootMargin: "-40% 0px -45% 0px",
-        threshold: [0.2, 0.4, 0.6]
+        rootMargin: "-20% 0px -35% 0px",
+        threshold: 0
       }
     );
 

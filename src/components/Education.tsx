@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 
 import { educationSection } from "@/content/education";
@@ -5,6 +8,8 @@ import Container from "@/components/ui/Container";
 import Card from "@/components/ui/Card";
 
 export default function Education() {
+  const [expandedDegree, setExpandedDegree] = useState<string | null>(null);
+
   return (
     <Container>
       <div className="flex flex-col gap-10">
@@ -16,36 +21,91 @@ export default function Education() {
             {educationSection.title}
           </h2>
         </div>
-        <Card className="p-6">
-          <ul className="space-y-4 text-sm text-white/70">
-            {educationSection.items.map((item) => (
-              <li key={item.text} className="flex items-start gap-3">
-                {item.logo ? (
-                  <span className="flex h-9 w-28 items-center justify-center rounded-full bg-white/90 px-3">
-                    <Image
-                      src={item.logo.src}
-                      alt={item.logo.alt}
-                      width={120}
-                      height={36}
-                      unoptimized={item.logo.src.endsWith(".svg")}
-                      className="h-5 w-auto object-contain"
-                    />
-                  </span>
-                ) : null}
-                <div className="flex-1">
-                  <span>{item.text}</span>
-                  {item.topics && item.topics.length > 0 && (
-                    <ul className="mt-2 list-disc pl-5 text-white/50">
-                      {item.topics.map((topic) => (
-                        <li key={topic}>{topic}</li>
-                      ))}
-                    </ul>
+        <div className="space-y-3">
+          {educationSection.items.map((item) => {
+            const isExpanded = expandedDegree === item.degree;
+            const hasTopics = item.topics && item.topics.length > 0;
+
+            return (
+              <Card
+                key={item.degree}
+                className="border border-white/10 bg-white/5 p-5"
+              >
+                <button
+                  type="button"
+                  className="flex w-full items-center justify-between gap-4 text-left"
+                  onClick={() =>
+                    setExpandedDegree(isExpanded ? null : item.degree)
+                  }
+                >
+                  <div className="flex-1">
+                    <h3 className="text-base font-semibold text-white">
+                      {item.degree}
+                    </h3>
+                    <p className="mt-1 text-sm text-white/70">
+                      {item.institution}
+                      <span className="text-white/40">
+                        {" "}
+                        &middot; {item.location}
+                      </span>
+                      <span className="text-white/40">
+                        {" "}
+                        &middot; {item.year}
+                      </span>
+                    </p>
+                  </div>
+                  {item.logo ? (
+                    item.url ? (
+                      <a
+                        href={item.url}
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label={`${item.logo.alt} website`}
+                        className="shrink-0 transition hover:opacity-70"
+                        onClick={(e) => e.stopPropagation()}
+                      >
+                        <Image
+                          src={item.logo.src}
+                          alt={item.logo.alt}
+                          width={120}
+                          height={36}
+                          unoptimized={item.logo.src.endsWith(".svg")}
+                          className={`h-8 w-auto object-contain ${item.logo.src.includes("mdx") ? "" : "brightness-0 invert"}`}
+                        />
+                      </a>
+                    ) : (
+                      <Image
+                        src={item.logo.src}
+                        alt={item.logo.alt}
+                        width={120}
+                        height={36}
+                        unoptimized={item.logo.src.endsWith(".svg")}
+                        className={`h-8 w-auto shrink-0 object-contain ${item.logo.src.includes("mdx") ? "" : "brightness-0 invert"}`}
+                      />
+                    )
+                  ) : null}
+                  {hasTopics && (
+                    <span
+                      className={`ml-2 shrink-0 text-white/40 transition-transform ${isExpanded ? "rotate-180" : ""}`}
+                    >
+                      ▾
+                    </span>
                   )}
-                </div>
-              </li>
-            ))}
-          </ul>
-        </Card>
+                </button>
+                {hasTopics && isExpanded && (
+                  <ul className="mt-4 space-y-1.5 text-sm text-white/70">
+                    {item.topics!.map((topic) => (
+                      <li key={topic} className="flex gap-3">
+                        <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
+                        <span>{topic}</span>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </Card>
+            );
+          })}
+        </div>
       </div>
     </Container>
   );

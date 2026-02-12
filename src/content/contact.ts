@@ -1,6 +1,6 @@
 export const contactSection = {
   title: "Contact",
-  subtitle: "Based in Switzerland. Available for advisory and strategic partnerships.",
+  subtitle: "Based in Switzerland. Open to new opportunities and collaborations.",
   form: {
     submitLabel: "Send Message",
     successTitle: "Message ready",
@@ -26,16 +26,6 @@ export const contactSection = {
   },
   links: [
     {
-      label: "LinkedIn",
-      href: "https://www.linkedin.com/in/sandro-zwyssig-7814858/",
-      detail: "linkedin.com/in/sandro-zwyssig-7814858"
-    },
-    {
-      label: "GitHub",
-      href: "https://github.com/FreshByteLab",
-      detail: "github.com/FreshByteLab"
-    },
-    {
       label: "Email",
       href: "mailto:sandro@zwyssig.info",
       detail: "sandro@zwyssig.info"
@@ -44,6 +34,16 @@ export const contactSection = {
       label: "Phone",
       href: "tel:+41764368137",
       detail: "+41 76 436 81 37"
+    },
+    {
+      label: "LinkedIn",
+      href: "https://www.linkedin.com/in/sandro-zwyssig-7814858/",
+      detail: "linkedin.com/in/sandro-zwyssig-7814858"
+    },
+    {
+      label: "GitHub",
+      href: "https://github.com/FreshByteLab",
+      detail: "github.com/FreshByteLab"
     }
   ]
 };

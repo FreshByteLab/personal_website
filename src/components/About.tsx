@@ -29,22 +29,16 @@ export default function About() {
         </div>
         {hasHighlights ? (
           <Card className="p-6">
-            <ul className="space-y-4 text-sm text-white/70">
+            <ul className="space-y-5 text-sm text-white/70">
               {site.about.highlights.map((item) => (
                 <li key={item.text} className="flex items-start gap-3">
-                  {item.logo ? (
-                    <span className="flex h-9 w-28 items-center justify-center rounded-full bg-white/90 px-3">
-                      <Image
-                        src={item.logo.src}
-                        alt={item.logo.alt}
-                        width={120}
-                        height={36}
-                        unoptimized={item.logo.src.endsWith(".svg")}
-                        className="h-5 w-auto object-contain"
-                      />
-                    </span>
-                  ) : null}
-                  <span className="flex-1">{item.text}</span>
+                  <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-accent" />
+                  <div className="flex-1">
+                    {item.title && (
+                      <span className="font-semibold text-white">{item.title} — </span>
+                    )}
+                    <span>{item.text}</span>
+                  </div>
                 </li>
               ))}
             </ul>

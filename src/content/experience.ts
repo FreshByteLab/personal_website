@@ -1,8 +1,8 @@
 import type { ExperienceItem } from "./types";
 
 export const experienceSection = {
-  title: "Experience",
-  subtitle: "CHF IG credit research, cross-asset advisory, and quantitative portfolio management.",
+  title: "Career Timeline",
+  subtitle: "From academic foundations through credit research and cross-asset advisory to quantitative portfolio management — with professional credentials earned along the way.",
   items: [
     {
       id: "bmpi",
@@ -19,11 +19,11 @@ export const experienceSection = {
     },
     {
       id: "career-break",
-      role: "Educational Career Break",
-      company: "Professional Certifications",
+      role: "Professional Certifications",
+      company: "Self-Directed Study",
       dates: "Aug 2024 - Mar 2025",
       bullets: [
-        "Completed PCEP, PCAP, and Responsible AI (RAI) certifications.",
+        "Completed PCEP, PCAP, and Risk & AI (RAI) certifications.",
         "Focused on OOP, Python, machine learning, and applied risk management."
       ],
       skills: ["OOP", "Python", "VS Code", "ML", "GenAI", "Risk Management"]
@@ -58,7 +58,7 @@ export const experienceSection = {
         "Formulated and presented strategy and credit recommendations (single securities) to Investment Committees and clients; contributed to flagship full-year and mid-year outlooks.",
         "Developed a duration strategy and built commodity research offering with focus on oil and gas.",
         "Built and documented FICC database, valuation models, and research recommendation tracking system (IT audit compliant).",
-        "Led Project Dolphin — efficiency and productivity gains for the FICC/ISE platform."
+        "Contributed to Project Dolphin — efficiency and productivity gains for the FICC/ISE platform."
       ],
       skills: ["Macroeconomic Analysis", "Bond/Sector/Commodity Strategy", "Duration Strategy", "Client Reporting Optimization", "Senior-Level Investment Communication", "FICC Database", "Valuation Models"],
       achievements: [
@@ -115,10 +115,25 @@ export const experienceSection = {
       dates: "Jul 2012 - May 2013",
       location: "Lucerne",
       bullets: [
-        "Built a research SQL database for Project Lac and developed Access-based front-end tools for data management.",
-        "Increased operational efficiency substantially for all stakeholders through automated reporting with MS SQL, Access VBA, and Excel VBA."
+        "Built a research SQL database for Project Lac and developed Access-based front-end tools for data management."
       ],
-      skills: ["Access VBA", "SQL", "Excel VBA"]
+      skills: ["Access VBA", "SQL", "Excel VBA", "Requirement Engineering"],
+      achievements: [
+        "Increased operational efficiency substantially for all stakeholders through automated reporting with MS SQL, Access VBA, and Excel VBA."
+      ]
+    },
+    {
+      id: "ubs-ib",
+      role: "Economic Research Analyst",
+      company: "UBS Investment Bank AG",
+      dates: "Aug 2006 - Nov 2006",
+      location: "Zurich",
+      bullets: [
+        "Trading floor internship in the economic research section.",
+        "Wrote market reports and performed ad-hoc market analysis for clients.",
+        "Developed and enhanced a global interest rate model with stochastic factor sensitivities."
+      ],
+      skills: ["Economic Research", "Interest Rate Modelling", "State Space Modelling", "Market Analysis", "MatLab", "Excel"]
     },
     {
       id: "ubs",

@@ -1,8 +1,6 @@
 import About from "@/components/About";
 import BackToTop from "@/components/BackToTop";
-import Certifications from "@/components/Certifications";
 import Contact from "@/components/Contact";
-import Education from "@/components/Education";
 import Experience from "@/components/Experience";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
@@ -20,19 +18,13 @@ export default function Page() {
         <Section id="about">
           <About />
         </Section>
-        <Section id="education">
-          <Education />
-        </Section>
         <Section id="experience">
           <Experience />
         </Section>
         <Section id="skills">
           <Skills />
         </Section>
-        <Section id="certifications">
-          <Certifications />
-        </Section>
-        <Section id="projects">
+<Section id="projects">
           <Projects />
         </Section>
         <Section id="contact">

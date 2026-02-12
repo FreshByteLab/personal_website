@@ -50,6 +50,7 @@ export type CertificationItem = {
 };
 
 export type AboutHighlight = {
+  title?: string;
   text: string;
   logo?: {
     src: string;
@@ -71,13 +72,25 @@ export type MilestoneItem = {
   title: string;
   description: string;
   targetId?: string;
+  category?: "bank" | "education" | "tech" | "certification";
+  topics?: string[];
+  bullets?: string[];
+  url?: string;
+  logo?: {
+    src: string;
+    alt: string;
+  };
 };
 
 export type EducationItem = {
-  text: string;
+  degree: string;
+  institution: string;
+  location: string;
+  year: string;
   topics?: string[];
   logo?: {
     src: string;
     alt: string;
   };
+  url?: string;
 };

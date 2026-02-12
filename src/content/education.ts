@@ -5,9 +5,12 @@ export const educationSection = {
   subtitle: "Academic foundations and credentials.",
   items: [
     {
-      text: "Doctor of Business Administration (Middlesex University London, 2023).",
+      degree: "Doctor of Business Administration (DBA)",
+      institution: "Middlesex University London",
+      location: "London",
+      year: "2023",
       topics: [
-        "CoCo Bond Capital Structures",
+        "Bank Capital Structure",
         "Portfolio Optimization",
         "Wavelet Analysis",
         "Bayesian Networks",
@@ -16,30 +19,41 @@ export const educationSection = {
       logo: {
         src: "/institutions/mdx-logo.svg",
         alt: "Middlesex University London logo"
-      }
+      },
+      url: "https://www.mdx.ac.uk"
     },
     {
-      text:
-        "Master of Arts (MA) in Quantitative Economics & Finance (University of St. Gallen, 2006).",
+      degree: "Master of Arts (MA) in Quantitative Economics & Finance",
+      institution: "University of St. Gallen",
+      location: "St. Gallen",
+      year: "2006",
       topics: [
         "Asset Pricing",
-        "Credit Migration Modelling"
+        "Credit Migration Modelling",
+        "Derivative Markets",
+        "Econometrics"
       ],
       logo: {
         src: "/institutions/hsg-logo.svg",
         alt: "University of St. Gallen logo"
-      }
+      },
+      url: "https://www.unisg.ch"
     },
     {
-      text:
-        "Bachelor of Arts (BA) in Economics (University of St. Gallen, 2004).",
+      degree: "Bachelor of Arts (BA) in Economics",
+      institution: "University of St. Gallen",
+      location: "St. Gallen",
+      year: "2004",
       topics: [
-        "Macro Modelling"
+        "Macroeconomics & Financial Forecasting",
+        "Capital Market Theory",
+        "Empirical Finance"
       ],
       logo: {
         src: "/institutions/hsg-logo.svg",
         alt: "University of St. Gallen logo"
-      }
+      },
+      url: "https://www.unisg.ch"
     }
-  ] satisfies EducationItem[]
+  ] as EducationItem[]
 };
